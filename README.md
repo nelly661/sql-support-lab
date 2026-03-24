@@ -24,3 +24,21 @@ SELECT * FROM tickets WHERE priority = 'High';
 
 ### Purpose
 Used to identify urgent support cases requiring immediate attention.
+## Scenario 4: Find Duplicate Customer Records
+
+### Query
+SELECT email, COUNT(*) 
+FROM customers 
+GROUP BY email 
+HAVING COUNT(*) > 1;
+
+### Purpose
+Used to identify duplicate customer records in the database.
+
+## Scenario 5: Check Active Accounts
+
+### Query
+SELECT * FROM customers WHERE account_status = 'Active';
+
+### Purpose
+Used to review active customer accounts during support investigations.
