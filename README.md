@@ -1,2 +1,3 @@
-# sql-support-lab
-A beginner SQL project focused on support-oriented data investigation, using simple queries to troubleshoot customer records, billing status, and common service-related scenarios.
+SELECT * FROM customers;
+SELECT * FROM billing WHERE payment_status = 'Pending';
+SELECT * FROM tickets WHERE priority = 'High';
